@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ana Clara Martins</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3fdf5;
+      color: #2e3e2e;
+    }
+
+    /* Menu de navegação */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #2e7d32;
+      padding: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a5d6a7;
+    }
+
+    /* Espaço abaixo do menu fixo */
+    header {
+      background-color: #2e7d32;
+      padding: 100px 20px 40px;
+      text-align: center;
+      color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+
+    .curso {
+      font-size: 1.2em;
+      color: #c8e6c9;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .foto-perfil {
+      flex: 1 1 250px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .foto-perfil img {
+      width: 100%;
+      border-radius: 12px;
+      border: 4px solid #2e7d32;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .apresentacao {
+      flex: 2 1 400px;
+    }
+
+    .apresentacao h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #388e3c;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    section h3 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #66bb6a;
+    }
+
+    .contato {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contato h3 {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      color: #2e7d32;
+    }
+
+    .icones {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 20px;
+    }
+
+    .icones a {
+      color: #2e3e2e;
+      font-size: 1.8em;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .icones a:hover {
+      transform: scale(1.2);
+      color: #66bb6a;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.95em;
+      color: #ffffff;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav>
+    <ul>
+      <li><a href="#sobre">Sobre mim</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#certificacoes">Certificações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Ana Clara Martins</h1>
+    <div class="curso">Graduanda em Ciência de Dados e Machine Learning - UniCEUB</div>
+  </header>
+
+  <main id="sobre" class="container">
+    <div class="foto-perfil">
+      <img src="Ana_Clara.jpg" alt="Foto de Ana Clara">
+    </div>
+    <div class="apresentacao">
+      <h2>Sobre mim</h2>
+      <p>
+        Eu sou a Ana Clara Martins, sou técnica em informática e, atualmente, estou fazendo faculdade de Ciência de Dados e Machine Learning no Centro Universitário de Brasília (Uniceub). Tenho conhecimento com a linguagem de programação Python, já tive contato com Kotlin, com a linguagem de marcação HTML, com CSS e Java.
+      </p>
+    </div>
+  </main>
+
+
+  <section id="contato" class="contato">
+    <h3>Informações para contato:</h3>
+    <div class="icones">
+      <a href="https://www.linkedin.com/in/anaclaraomb" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:anaclarabom06@gmail.com" title="E-mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/ACNA09" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ana Clara Martins. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
